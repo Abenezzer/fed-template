@@ -3,10 +3,16 @@
 }
 
 body {
-    background-color: #0c2a4c;
-    padding: 0;
+  background-color: #0c2a4c;
+  padding: 0;
 }
 
 #fed-color {
-  color:#0c2a4c;
+  color: #0c2a4c;
+}
+
+.styled-hr {
+  background-color: goldenrod;
+  width: 95%;
+  height: 2px;
 }
