@@ -4,6 +4,7 @@
 }
 body {
   background-color: var(--fed-bg-color);
+  max-width: 100vw;
 }
 
 .fed-text-color {
@@ -16,4 +17,11 @@ body {
 
 .offcanvas-custom {
   max-width: 250px;
+}
+
+#total-feedback {
+  top: 50px;
+  z-index: 200;
+  right: 200px;
+  color: var(--fed-bg-color);
 }

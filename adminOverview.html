@@ -46,6 +46,21 @@
     </script>
   </head>
   <body class="bg-light-subtle">
+    <header class="w-100">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 px-0 shadow-lg">
+            <a href="/">
+              <img
+                class="img-fluid mx-auto"
+                src="./img/fedlogo.jpg"
+                alt="website logo"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
     <div class="side-bar">
       <div
         class="offcanvas offcanvas-start offcanvas-custom p-0"
@@ -73,14 +88,14 @@
               <a class="text-decoration-none" href="#">Manage Department</a>
             </li>
             <li class="btn btn-outline-warning">
-              <a class="text-decoration-none" href="#">Show Detail feedback</a>
+              <a class="text-decoration-none" href="#">Add Questionary</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
     <div class="container">
-      <header
+      <div
         class="row justify-content-center align-items-center my-3 border-bottom border-3"
       >
         <div class="sidebar-icon col-2">
@@ -110,11 +125,25 @@
             </select>
           </form>
         </div>
-      </header>
+      </div>
     </div>
-    <body>
-      <div class="row justify-content-center">
-        <div id="piechart_3d" style="width: 900px; height: 500px"></div>
+    <body class="w-100">
+      <div class="container">
+        <div class="row justify-content-center position-relative">
+          <div class="text-center">
+            <div
+              class="mx-auto"
+              id="piechart_3d"
+              style="width: 900px; height: 600px"
+            ></div>
+          </div>
+          <div
+            id="total-feedback"
+            class="col-2  position-absolute h5 text-nowrap"
+          >
+            Total Feedback: 100
+          </div>
+        </div>
       </div>
     </body>
 
