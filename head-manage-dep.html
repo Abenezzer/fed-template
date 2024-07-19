@@ -88,45 +88,59 @@
       </div>
     </div>
     <!-- Sidebar ends -->
-
-    <section class="container my-5 text-white">
-      <h2 class="text-center mb-4">Add and Manage Questions</h2>
-      <div
-        class="bg-white shadow-lg row justify-content-center w-75 mx-auto p-4 rounded-3 shadow-lg"
-      >
-        <div
-          class="d-flex justify-content-between align-items-center border-bottom border-2 py-3 mb-4"
-        >
-          <span class="text-dark h3">Add and Edit Questions</span>
-          <span id="addBtn">
-            <i class="h1 bi bi-plus-circle-fill text-primary"></i>
-          </span>
-        </div>
-        <div class="mb-3 align-self-start w-50">
-          <form action="/fiter" method="POST">
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Choose Department</option>
-              <option value="1">All Department</option>
-              <option value="1">Department One</option>
-              <option value="2">Department Two</option>
-              <option value="3">Department Three</option>
-            </select>
-          </form>
-        </div>
-        <form id="questionForm" action="/Addquestion">
-          <div id="question-fields">
-            <div class="d-flex justify-content-around gap-2 mb-3">
-              <input
-                name="question 1"
-                type="text"
-                class="form-control"
-                placeholder="Add your Question"
-              />
-              <span class="btn btn-danger">Delete</span>
+    <section>
+      <div class="container">
+        <div class="row gap-2">
+          <ul class="list-group list-group-item-secondary p-3 rounded-5">
+            <div class="container">
+              <li
+                class="list-group-item d-flex justify-content-between px-4 align-items-center"
+              >
+                <span>Criminal Investigation Department (CID)</span>
+                <div class="d-inline-flex gap-3">
+                  <button class="btn btn-warning">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center px-4"
+              >
+                <span>Counter-Terrorism Unit</span>
+                <div class="d-inline-flex gap-3">
+                  <button class="btn btn-warning">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center px-4"
+              >
+                <span>Intelligence and Surveillance Department</span>
+                <div class="d-inline-flex gap-3">
+                  <button class="btn btn-warning">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center px-4"
+              >
+                <span>Cyber Crime Unit</span>
+                <div class="d-inline-flex gap-3">
+                  <button class="btn btn-warning">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center px-4"
+              >
+                <span>Human Resources Department</span>
+                <div class="d-inline-flex gap-3">
+                  <button class="btn btn-warning">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </div>
+              </li>
             </div>
-          </div>
-          <button class="btn btn-primary mt-3" type="submit">Submit</button>
-        </form>
+          </ul>
+        </div>
       </div>
     </section>
 

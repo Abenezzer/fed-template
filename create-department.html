@@ -76,7 +76,7 @@
               >
             </li>
             <li class="btn btn-primary">
-              <a class="text-decoration-none text-white" href="#"
+              <a class="text-decoration-none text-white active" href="#"
                 >Add Questionary</a
               >
             </li>
@@ -142,26 +142,35 @@
             <textarea class="form-control" id="description" rows="3"></textarea>
           </div>
           <!-- system managed by this department -->
-          <div id="managed-system" class="">
-            <div class="mb-3">
-              <label for="dep1" class="form-label"
-                >Systems Managed by this Department:
-              </label>
-              <input
-                type="text"
-                class="form-control"
-                id="dep1"
-                placeholder="System Mangaged by this department"
-              />
+          <div id="managed-system" class="mb-3">
+            <div class="container">
+              <div
+                id="addFieldForMangedSystem"
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <p class="fs-5">Add System managed by this department</p>
+                <span id="add-field-manage" class="btn btn-warning"> Add</span>
+              </div>
+            </div>
+
+          </div>
+          
+          <hr />
+          <!-- System used by this department -->
+          <div id="used-system" class="">
+            <div class="container">
+              <div
+                id="addFieldForUsedSystem"
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <p class="fs-5">Add System Used by this department</p>
+                <span id="add-field-used" class="btn btn-warning"> Add</span>
+              </div>
             </div>
           </div>
-          <div id="addFieldForMangedSystem" class="d-flex justify-content-end">
-            <span id="add-field-manage" class="btn btn-warning"> Add</span>
-          </div>
-          <hr>
-          <!-- System used by this department -->
-          <div id="used-system"></div>
+
           
+
           <div id="addFieldForUsedSystem" class=""></div>
 
           <button type="submit" class="btn btn-lg btn-primary">Submit</button>

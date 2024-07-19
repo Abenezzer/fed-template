@@ -6,10 +6,10 @@ function createField() {
   questionNo++;
   return `
     <input
-      name= "question" + ${questionNo}
+      name= "question" + ${Date.now()};
       type="text"
       class="form-control"
-      placeholder="Question " + ${questionNo}
+      placeholder="Add your question " 
     />
     <span class="btn btn-danger">Delete</span>
   
